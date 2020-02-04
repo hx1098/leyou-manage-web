@@ -24,6 +24,7 @@
       handleAdd(node) {
         console.log("add .... ");
         console.log(node);
+
       },
       handleEdit(id, name) {
         console.log("edit... id: " + id + ", name: " + name)

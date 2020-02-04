@@ -17,7 +17,7 @@
           <v-card class="elevation-0" v-show="currentNode.id">
               <v-card-title v-if="!currentNode.path">
                 请先选择一个分类
-              </v-card-title>         
+              </v-card-title>
             <v-breadcrumbs dense v-else>
                 <v-icon slot="divider">chevron_right</v-icon>
                 <v-breadcrumbs-item
@@ -54,6 +54,8 @@ export default {
     // 分类点击后的弹窗
     handleClick(node) {
       // 判断点击的节点是否是父节点（只有点击到叶子节点才会展示规格）
+      console.log("------------------123");
+      console.log(node);
       if (!node.isParent) {
         // 把当前点击的节点记录下来
         this.currentNode = node;
